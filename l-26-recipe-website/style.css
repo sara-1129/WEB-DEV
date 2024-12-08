@@ -1,0 +1,151 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+#navList{
+    list-style:none;
+    font-size: 2.5rem;
+    display:flex;
+    justify-content: space-between;
+    /* margin-right: 15px;
+    margin-left:15px; */
+    padding:15px;
+    align-items: center;
+    /* margin:2px 15px; */
+
+}
+.container{
+    background: #d9a7c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dbd9c1, #f3daea);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dbd9c1, #f3daea); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    height:auto;
+    width: 99vw;
+    overflow-x:hidden;
+
+}
+.navcontainer{
+    min-height: 80px;
+    width:100vw;
+    background: #74ebd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3857df, #3fac98); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    width:100%;
+   
+}
+#navLogo{
+    font-size: 2.5rem;
+    color:aliceblue;
+}
+nav{
+    width:100%
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+#navitem{
+    display:flex;
+  gap:40px;
+
+}
+.footerbox{
+    background: #74ebd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3857df, #3fac98); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    width:100%;
+    text-align: center;
+    min-height: 40px;
+}
+
+.footerbox p{
+    color:azure;
+    font-size: 2rem;
+    
+   
+}
+.contentbox{
+    width: 60%;
+    margin: 10px auto;
+    box-shadow:5px 8px 30px #c15599f4;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap:100px
+}
+.item1{
+    box-sizing: border-box;
+ display:flex;
+ justify-content:space-evenly;
+ align-items: center;
+ margin:4px;
+ border: 2px solid #d9a7c7;
+ border-radius: 30px; 
+  padding:20px ;
+  padding-left:30px;
+}
+.rightbox img{height: 300px;
+width:300px;
+border-radius: 30px;
+transition: all 0.8s linear 0s;  
+box-shadow: 1px 1px 1px #8a4b73;
+}
+.rightbox:hover{
+    transform:scale(1.1);
+}
+.leftbox{
+    display:flex;
+    flex-direction: column;
+
+}
+.leftbox h2{
+    font-size: 4rem,
+}
+.Ingredients{
+    font-size: 1.2rem;
+
+}
+.recipe{
+font-size: 1.2rem;
+}
+h3{
+    font-size:1.3rem ;
+}
+.rightbox{
+    position: relative;
+    overflow: hidden;
+
+}
+.rightbox .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    background-color: rgba(66, 65, 65, 0.573);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition:all 0.7s ease-out 0s;
+
+}
+.rightbox .overlay span{
+    color:whitesmoke;
+    font-size:0.9rem;
+}
+.rightbox:hover .overlay{
+    opacity:1;
+
+}

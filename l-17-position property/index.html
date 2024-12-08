@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            margin: 20px;
+        }
+
+        div {
+            border: 1px solid black;
+            height: 5000px;
+        }
+
+        .image2{
+            
+            /* top: 100px;
+            left: 100px; */
+            
+            position: relative;
+
+            /* position:absolute;
+            top: 100px; */
+            /* position:fixed;
+            top: 100px; */
+        }
+        .container{
+            position:relative;
+            background-color: rgba(132, 185, 42, 0.481);
+        }
+        .image4{
+            position:fixed;
+        
+        }
+        .image3{
+            position:sticky;
+            top:100px;
+
+        }
+        .box{
+            background-color: aquamarine;
+            height:5000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="tableLamp.jpg" alt="tablelamp" width="300px" height="300px" class="image1">
+        <img src="tableLamp.jpg" alt="tablelamp" width="300px" height="300px" class="image2">
+        <img src="tableLamp.jpg" alt="tablelamp" width="300px" height="300px" class="image3">
+        <img src="tableLamp.jpg" alt="tablelamp" width="300px" height="300px" class="image4">
+    </div>
+    <div class="box">
+    
+    </div>
+</body>
+
+</html>

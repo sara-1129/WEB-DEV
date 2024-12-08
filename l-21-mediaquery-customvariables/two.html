@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .container{
+            display:flex;
+            border: 1px solid black;
+            background-color: blanchedalmond;
+            margin: 2px;
+            padding:2px;
+            
+            
+        }
+        .boxleft{
+        display: flex;
+        background-color: aquamarine;
+        flex-direction:column;
+        height: 400px;
+        width:400px;
+        margin:2px;
+
+        }
+        .boxright{
+            display:flex;
+            height:400px;
+            background-color: brown;
+            height: 400px;
+            width:400px;
+            margin:2px;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            height: 350px;
+            width:350px;
+           
+        }
+        p{
+            border:2px solid black;
+            line-height: 4;
+            text-align: center;
+            background-color: pink;
+        }
+        @media(min-width:641px){
+           .container{
+            flex-direction:row;
+           }
+           .boxleft{
+           justify-content: space-around;
+           }
+        }
+        @media(max-width:640px){
+           .container{
+            flex-direction:column;
+           }
+           .boxleft{
+           justify-content: space-around;
+           }
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="boxleft">
+            <p>text1</p>
+            <p>text2</p>
+        </div>
+      
+        <div class="boxright">
+            <img src="trainimage.jpg.png" alt="trainimage">
+        </div>
+    </div>
+</body>
+</html>

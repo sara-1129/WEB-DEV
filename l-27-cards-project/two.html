@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 3</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100%;
+            height:100vh;
+            background: #606c88;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #293349, #303a54); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items: center;
+
+        }
+        .card{
+            width:55%;
+            height:55%;
+            background-color: aliceblue;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        #rightbox{
+            width:100%;
+            height:100%;
+           
+        }
+        #rightbox img{
+            width:100%;
+            height:100%;
+           
+        }
+        #leftbox{
+            width:100%;
+            height:100%;
+            color:aliceblue;
+            background-color: rgba(53, 14, 65, 0.923) ;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap:20%;
+            padding:8%;
+        }
+        #leftbox,#rightbox{
+            border:  2px solid rgb(53, 14, 65);
+
+        }
+        .link{
+            width:100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .link a{
+            text-decoration: none;
+            color:aliceblue;
+            font-size: 1.7em;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px aliceblue;
+        }
+        .link a p{
+            font-size: 0.7em;
+            font-weight: normal;
+            text-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div id="leftbox">
+                <h2>
+                    Get the insights that help you grow
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptatum minima doloremque cumque saepe veniam eos sunt pariatur cum non?
+                </p>
+                <div class="link">
+                    <a href="">10K+
+                        <p>Comments</p>
+                    </a><a href="">214
+                        <p>Paid Users</p>
+                    </a><a href="">12M+
+                        <p>Views </p>
+                    </a>
+                </div>
+
+            </div>
+            <div id="rightbox">
+                <img src="books2.png" alt="">
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>

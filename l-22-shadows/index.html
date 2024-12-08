@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        :root{
+            --primary-color:brown;/* Agar hame ek custom variable ko document mein kahi bhi istemaal krna hai to ham use root ke andar define karenge.*/
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            background-color: aquamarine;
+            border:2px solid black;
+            height:650px;
+        }
+        img{
+            height: 150px;
+            width: 150px;
+        }
+        .box{
+             /*Custom variable create ,Jo custom variables hamne yahaan create kiye hai vo box ke andar hi utilize ho paayenge uske bahar nhi.
+            */
+            --custom-width:330px;
+            background-color: beige;
+            width: var(--custom-width);/* Using custom variable*/
+            height: var(--custom-width);
+            border:2px solid brown;
+            padding:5px;
+            margin:5px;
+            /* box-shadow:  -10px 15px brown; */
+
+            /* box-shadow: 10px 15px 2px brown; */
+            /* box-shadow: 10px 15px 5px 5px brown; */
+            /* box-shadow: inset 10px 15px brown; */
+            box-shadow: 10px 15px red,  inset 15px 30px green;
+        }
+        #head1{
+            /* text-shadow: 3px 3px 1px rgba(210, 111, 128, 0.826); */
+            text-shadow:   12px 13px 1px rgba(210, 111, 128, 0.826), 5px 4px 1px red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="tableLamp.jpg" alt="tableLamp">
+            <h2 id="head1">
+                Welcome to CodeHelp
+            </h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, quam nemo. Voluptatibus dolores odit nam
+                at sed blanditiis debitis exercitationem, repudiandae corporis illum. Minima, voluptatibus.
+            </p>
+
+        </div>
+    </div>
+</body>
+
+</html>
