@@ -22,7 +22,7 @@ var x =10; // can be redeclared
 var x =20;
 
 
-// {let a =10;} =>gives an error
+//  {let a =10;}// =>gives an error if we try to access it outside braces
 let a=10;
 // console.log(a);
 a=20;
